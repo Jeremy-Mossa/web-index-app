@@ -1,7 +1,7 @@
 body {
   font-family: "Bookman", serif;
   background-image: url("paperbg.jpg"); /* Replace with your image path */
-  background-repeat: repeat; /* Adjust other background properties as needed */
+  background-repeat: repeat-y; /* Adjust other background properties as needed */
   background-position: center; /* Set background image position */
 }
 h1 {
