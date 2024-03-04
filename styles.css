@@ -6,3 +6,18 @@ body {
   background-repeat: no-repeat; /* Adjust other background properties as needed */
   background-position: center; /* Set background image position */
 }
+h1 {
+  font-size: 36px;
+}
+ul {
+  list-style-type: disc; /* Use disc for bullet points */
+  margin: 10px;
+  padding: 0; /* Remove padding to avoid extra space */
+}
+li {
+  margin: 10px;
+}
+a {
+  text-decoration: none;
+  color: blue;
+}
