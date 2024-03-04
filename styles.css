@@ -2,7 +2,7 @@ CSS
 
 body {
   font-family: "Bookman", serif;
-  background-image: url("path/to/your/image.jpg"); /* Replace with your image path */
+  background-image: url("paperbg.jpg"); /* Replace with your image path */
   background-repeat: no-repeat; /* Adjust other background properties as needed */
   background-position: center; /* Set background image position */
 }
