@@ -1,8 +1,8 @@
 body {
   font-family: "Bookman", serif;
-  background-image: url("paperbg.jpg"); /* Replace with your image path */
-  background-repeat: repeat-y; /* Adjust other background properties as needed */
-  background-position: center; /* Set background image position */
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4)),
+    url("paperbg.jpg") repeat;
 }
 h1 {
   font-size: 36px;
