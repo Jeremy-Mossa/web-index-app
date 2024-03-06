@@ -1,76 +1,124 @@
 body {
-  font-family: "Bookman", serif;
-}
-
-h1 {
-  font-size: 36px;
-}
-
-li {
-  margin: 10px;
-}
-
-a {
-  text-decoration: none;
-  color: blue;
-}
-
-.navigation {
+  font-family: sans-serif;
+  margin: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff; /* Light mode default */
 }
 
-.navigation {
+.container {
+  width: 80%;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+header {
   display: flex;
-  justify-content: flex-end; /* Right align */
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.hamburger-button {
-  background-color: transparent;
-  border: none;
-  padding: 10px;
+.toggle-mode {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   cursor: pointer;
-  position: relative; /* Needed for pseudo-elements */
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
   display: flex;
-  flex-direction: column; /* Stack lines vertically */
-  justify-content: space-between; /* Space lines evenly */
-  width: 30px; /* Adjust width as needed */
-  height: 30px; /* Adjust height as needed */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 30px;
 }
 
-.hamburger-button::before,
-.hamburger-button::after,
-.hamburger-button::midline { /* Create a new pseudo-element for the middle line */
-  content: "";
-  display: block;
+.hamburger .bar {
   width: 100%;
-  height: 2px; /* Adjust line thickness */
-  background-color: #333; /* Change to your desired gray color */
-  z-index: 1;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 5px;
 }
 
-.hamburger-button::before { /* Top line */
-}
+/* Dropdown styles */
 
-.hamburger-button::midline { /* Middle line */
-  /* No additional styles needed, uses default positioning */
-}
-
-.hamburger-button::after { /* Bottom line */
-}
-
-.nav-links {
+.dropdown {
   display: none;
-  list-style: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown ul {
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
-.nav-links li {
-  margin-bottom: 10px;
+.dropdown li {
+  padding: 10px 20px;
 }
 
-.nav-links a {
+.dropdown a {
   text-decoration: none;
   color: #333;
+}
+
+/* Search bar styles */
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 10px;
+}
+
+.search-bar input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Dark mode styles */
+
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .toggle-mode {
+  border-color: #fff;
+  color: #fff;
+}
+
+.dark-mode .hamburger .bar {
+  background-color: #fff;
+}
+
+.dark-mode .dropdown {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .dropdown a {
+  color: #fff;
+}
+
+.dark-mode .search-bar {
+  border-color: #fff;
+  background-color: #333; /* Adjust for better contrast in dark mode */
 }
