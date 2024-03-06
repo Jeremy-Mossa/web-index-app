@@ -13,7 +13,7 @@ a {
 }
 .navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;  /* Change to flex-end for right alignment */
   align-items: center;
 }
 
@@ -22,6 +22,29 @@ a {
   border: none;
   padding: 10px;
   cursor: pointer;
+  position: relative; /* Needed for pseudo-elements */
+  display: flex;
+  flex-direction: column; /* Stack lines vertically */
+  justify-content: space-between; /* Space lines evenly */
+  width: 30px;  /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+}
+
+.hamburger-button::before,
+.hamburger-button::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px; /* Adjust line thickness */
+  background-color: #ccc; /* Change to your desired gray color */
+}
+
+.hamburger-button::before {
+  /* Top line */
+}
+
+.hamburger-button::after {
+  /* Bottom line */
 }
 
 .nav-links {
@@ -39,3 +62,4 @@ a {
   text-decoration: none;
   color: #333;
 }
+
