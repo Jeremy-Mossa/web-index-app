@@ -1,32 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skeleton Website</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
     <header>
-      <button class="toggle-mode">Toggle Mode</button>
-      <button class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-      <nav class="dropdown">
-        <ul>
-          <li><a href="#">Login</a></li>
-        </ul>
-      </nav>
+        <nav>
+            <div class="nav-icon">&#9776;</div>
+            <div class="theme-toggle">
+                <input type="checkbox" id="theme-switch">
+                <label for="theme-switch"></label>
+            </div>
+        </nav>
     </header>
     <main>
-      <div class="search-bar">
-        <input type="text" placeholder="Search">
-      </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search...">
+        </div>
     </main>
-  </div>
-  <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
