@@ -5,8 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web App</title>
     <link rel="stylesheet" href="styles.css">
+
+    <title>Practice Website</title>
+    <style type="text/css">
+        #main-header{
+            text-align:center;
+            background-color:black;
+            color:white;
+            padding:10px
+        }
+        #main-footer{
+            text-align:center;
+            font-size:18px;
+        }
+    </style>
 </head>
 <body>
+
+    <header id="main-header">
+        <h1>Practice Website</h1>
+    </header>
     <p>
         A new paragraph, and <strong>this is an inline strong tag</strong>.<br>
         This word emphasized, should be <em>emphasized</em>, which is
@@ -65,7 +83,8 @@
     <form action="process.php" method="POST">
         <div>
             <label>First Name</label>
-            <input type="text" name="first-name">
+            <input type="text" name="first-name"
+            placeholder="Enter first name">
         </div>
         <div>
             <label>Last Name</label>
@@ -82,7 +101,7 @@
         <br>
         <div>
             <label>Age</label>
-            <input type="number" name="age">
+            <input type="number" name="age" value="30">
         </div>
         <div>
             <label>Gender</label>
@@ -91,10 +110,43 @@
                 <option value="female">Female</option>
             </select>
         </div>
+        <div>
+            <label>Birthday:</label>
+            <input type="date" name="birthday">
+        </div>
+        <br>
+        <input type="submit" name="submit"
+        value="Submit">
     </form>
 
+    <!-- Button -->
+    <button>Click me</button>
+
+    <br>
+
+    <!-- Image -->
+    <a href="/home/jbm/Downloads/sample.jpg"
+    target="_blank">
+        <img src="/home/jbm/Downloads/sample.jpg"
+        alt="My sample image"
+        width="777"
+        height="300">
+    </a>
+
+    <!-- Quotations -->
+     <blockquote cite="https://linux.com">
+         The linux os was developed in 1991.
+     </blockquote>
+
+     <p>The <abbr title="Internet of Things">IOT</abbr>
+     is still being developed and need a lot more work.</p>
+     
+     <p><cite>web index app</cite> by JBM </p>
     <div style="margin-top:500px"></div>
 
     <script src="main.js"></script>
+
+    <footer id="main-footer">
+        <p>Copyright &copy; 1999, Practice Website</p>
 </body>
 </html>
