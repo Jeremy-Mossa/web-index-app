@@ -1,3 +1,12 @@
+/*
+This would zero out all margins and padding
+on all elements and styles
+*{
+    margin:0;
+    padding:0;
+}
+*/
+
 header{
     color:green;
     text-align:center;
@@ -28,6 +37,9 @@ body{
 
 .box-2{
     background-color:orange;
+
+    border:5px blue solid;
+    border-style:ridged;
 }
 
 footer{
