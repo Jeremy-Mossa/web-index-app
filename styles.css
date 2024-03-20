@@ -26,6 +26,11 @@ body{
     margin:0;    
 }
 
+a{
+    text-decoration:none;
+    color:mint;
+}
+
 #box-1{
     background-color:green;
 }
@@ -40,6 +45,26 @@ body{
 
     border:5px blue solid;
     border-style:ridged;
+
+    padding:50px;
+
+    margin-top:2px;
+}
+
+#item3{
+    font-family:"Gill Sans", sans serif;
+    text-decoration:underline;
+    text-transform:uppercase;
+    letter-spacing: 1em;
+    word-spacing: 2em;
+}
+
+.links{
+    text-align:center;
+    list-style-position:inside;
+    border:1px #ccc solid;
+    padding:20px;
+    border-radius:15px;
 }
 
 footer{
