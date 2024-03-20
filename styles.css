@@ -31,6 +31,14 @@ a{
     color:mint;
 }
 
+a:hover{
+    color:yellow;
+  }
+
+a:active{
+   color:green; 
+}
+
 #box-1{
     background-color:green;
 }
