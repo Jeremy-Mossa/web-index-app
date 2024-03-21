@@ -23,7 +23,7 @@ body{
     font-weight:bold;
 
     Line-height:1.6em;
-    margin:0;    
+    margin:20px;    
 }
 
 a{
@@ -74,6 +74,18 @@ a:active{
     padding:20px;
     border-radius:15px;
 }
+
+.fix-me{
+    margin:0;
+    border:1px #ccc solid;
+    border-radius:7px;
+    background-color:white;
+    font-size:20px;
+    position:fixed;
+    top:300px;
+    
+}
+
 
 footer{
     color:green;
