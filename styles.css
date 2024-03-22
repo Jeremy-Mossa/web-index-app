@@ -75,6 +75,10 @@ a:active{
     border-radius:15px;
 }
 
+.button1{
+    float:right;
+    margin-right:85px;
+}
 .fix-me{
     margin:0;
     border:1px #ccc solid;
@@ -82,10 +86,11 @@ a:active{
     background-color:white;
     font-size:20px;
     position:fixed;
-    top:300px;
-    
+    top:20px;
 }
 
+#sidebar{
+}
 
 footer{
     color:green;
