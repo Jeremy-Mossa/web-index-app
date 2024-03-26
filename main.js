@@ -1,7 +1,7 @@
-const str = 'jabberwocky'
+if (5 >= 2) {
+    console.log("it's truth")
+}
 
-console.log(str.bold())
-
-const city='south_san_francisco'
-console.log(city.includes('uth'))
-
+if (3 !== '3') {
+    console.log('tru')
+}
