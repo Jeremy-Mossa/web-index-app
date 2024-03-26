@@ -5,8 +5,8 @@ if (5 >= 2) {
 const a=3
 const b='3'
 
-if (a == b) {
+if (a == b) 
     console.log('tru')
-} else {
+else 
     console.log('falsity')
-}
+
