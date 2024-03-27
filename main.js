@@ -1,12 +1,11 @@
-const d = new Date()
-const hour = d.getHours()
+//const items = ['n1', 'n2', 'n3', 'n4']
+//
+//for (const item of items) {
+//    console.log(item)
+//}
 
-console.log(hour)
+const str = 'hey there'
 
-if (5 < hour & hour < 12) {
-    console.log('good morning')
-} else if (13 < hour & hour < 17) {
-    console.log('good afternoon')
-} else if (18 < hour & hour < 24) {
-    console.log('good evening')
+for (const letter of str) {
+    console.log(letter)
 }
