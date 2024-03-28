@@ -36,9 +36,15 @@
 //    console.log(colorArr[key])
 //}
 
-const apps = ['search', 'messages', 'email', 'camera']
 
-//console.log(apps.__proto__)
+let number_strings = {
+    1: 'one',
+    2: 'two',
+    3: 'three',
+    4: 'four',
+    5: 'five',
+}
 
-apps.forEach(element => console.log(element))
-
+for (n_key in number_strings) {
+    console.log(number_strings[n_key])
+} 
